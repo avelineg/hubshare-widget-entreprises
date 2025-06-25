@@ -1,6 +1,6 @@
 const axios = require(axios);
 
-const SIRENE_API_URL = httpsapi.sirene.frsireneV3.11;
+const SIRENE_API_URL = "https://api.sirene.fr/sirene/V3.11";
 
 async function searchSirene(query, apiKey) {
   let endpoint, params = {};
