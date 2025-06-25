@@ -25,7 +25,8 @@ app.get("/", (req, res) => {
   res.send("Bienvenue sur l’API Widget Entreprises !");
 });
 
+// Route ping pour test Render
+app.get("/api/ping", (req, res) => res.json({ pong: true }));
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
-
-app.get("/api/ping", (req, res) => res.json({ pong: true }));
