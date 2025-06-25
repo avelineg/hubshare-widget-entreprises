@@ -27,3 +27,5 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => console.log(`Backend listening on port ${PORT}`));
+
+app.get("/api/ping", (req, res) => res.json({ pong: true }));
